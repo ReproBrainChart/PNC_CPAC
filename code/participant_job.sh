@@ -56,10 +56,10 @@ git checkout -b "${BRANCH}"
 # re-run we want to be able to do fine-grained recomputing of individual
 # outputs. The recorded calls will have specific paths that will enable
 # recomputation outside the scope of the original setup
-datalad get -n "inputs/data/${subid}"
+#datalad get -n "inputs/data/${subid}"
 
 # Reomve all subjects we're not working on
-(cd inputs/data && rm -rf `find . -type d -name 'sub*' | grep -v $subid`)
+#(cd inputs/data && rm -rf `find . -type d -name 'sub*' | grep -v $subid`)
 
 # ------------------------------------------------------------------------------
 # Do the run!
