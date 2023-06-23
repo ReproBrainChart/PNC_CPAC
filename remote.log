@@ -1,1 +1,2 @@
 15bc84c3-e611-418c-bd43-36b0c70a118a archive-id=66da394c-5490-40bd-8aa8-b05f1df4cdf1 autoenable=true encryption=none externaltype=ora name=output-storage type=external url=ria+file:///cbica/projects/RBC/production/PNC/c-pac-1.8.5/output_ria timestamp=1684245581.40007s
+dbb463aa-5f71-40ae-8832-abdf3b9745bf autoenable=true bucket=fcp-indi datacenter=US encryption=none exporttree=no fileprefix=data/Projects/RBC/PNC_CPAC/ host=s3.amazonaws.com name=fcp-indi partsize=1GiB port=80 public=yes storageclass=STANDARD type=S3 timestamp=1687535433.384754927s
