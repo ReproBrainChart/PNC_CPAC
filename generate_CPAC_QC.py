@@ -34,6 +34,8 @@ df["motionExclude"][df["medianFD"]>=0.2]=1
 df["normCrossCorrExclude"][df["normCrossCorr"]<=0.8]=1
 df["fmriExclude"][df["normCrossCorrExclude"]==1]=1
 df["fmriExclude"][df["motionExclude"]==1]=1
+df["run"] = df["run"].astype(str)
+df["run"] = df["run"].apply(lambda x: x.zfill(2))
 combined_df=df.rename(columns={"sub": "participant_id", "ses": "session_id"})
 
 
